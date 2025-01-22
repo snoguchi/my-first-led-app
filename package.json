@@ -1,0 +1,15 @@
+{
+  "name": "my-first-led-app",
+  "scripts": {
+    "postinstall": "./patch.sh",
+    "start": "node src/main.ts",
+    "format": "npx @biomejs/biome format --write ./lib ./examples *.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  },
+  "dependencies": {
+    "rpi-led-matrix": "^1.14.0",
+    "sharp": "^0.33.5"
+  }
+}
